@@ -1,0 +1,376 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard-container {
+    display: flex;
+}
+
+.side-nav {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    margin-top: 183px;
+}
+
+.side-nav h3 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em; /* Adjust to your preference */
+    font-weight: bold;
+}
+
+/* Side Navigation Styling */
+.button-container button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #6f4e37;
+}
+
+.button-container button:hover {
+    background-color: #5a3c2d;
+}
+
+/* Main Content Styling */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Product List Styling */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 34px;
+    
+}
+/* Adjusting the Products Heading */
+.product-list h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1px;
+  margin-top: 0; /* Keep it close to the top */
+}
+
+
+.product-card {
+  width: 200px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.product-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* User Table Styling */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adds some spacing from other content */
+    background-color: #fff; /* White background for better contrast */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a card effect */
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px; /* Standardize text size */
+    color: #333; /* Neutral text color */
+  }
+  
+  .user-table th {
+    background-color: #d3a379; /* Coffee-colored header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .user-table tr:hover {
+    background-color: #f4f8fa; /* Highlight row on hover */
+  }
+  
+  .user-table td {
+    background-color: #fff;
+  }
+  
+  .user-table td:last-child {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .user-table td button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .user-table td button:hover {
+    background-color: #d3a379;
+  }
+
+
+  /* Category Dropdown Styling */
+.category-dropdown {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .category-dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Category Buttons Styling */
+  .category-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px; /* Add spacing between buttons */
+  }
+  
+  .category-buttons button:hover {
+    background-color: #0056b3;
+  }
+
+/* Add Admin Form Styling */
+.add-admin-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    align-items: center;
+}
+
+.add-admin-form div {
+    margin-bottom: 15px;
+    margin-right: 27px;
+}
+
+.add-admin-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.add-admin-form input,
+.add-admin-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+}
+
+.add-admin-form input[type="password"] {
+    background-color: #fff;
+}
+
+.add-admin-form input:focus,
+.add-admin-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.add-admin-form button {
+    width: 15%;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.add-admin-form button:hover {
+    background-color: #218838;
+}
+
+.adm {
+    width: 100%;
+}
+
+.edt{
+    background-color: #6f4e37;
+    color: #fff;
+}
+.dlt{
+    background-color: #6f4e37;
+    color: #fff;
+}
+
+
+.sgnp{
+    background-color:#6f4e37 ;
+    color: #fff;
+}
+
+/* Make sure all images are loaded consistently */
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logout-container {
+    margin-top: 20px;
+  }
+  
+  .logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .logout-button svg {
+    margin-right: 5px;
+  }
+  
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 92%;
+  }
+  
+  .search-bar {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    color: brown; /* Change the text color to brown */
+  }
+  
+  .search-bar::placeholder {
+    color: brown; /* Change the placeholder text color to brown */
+  }
+  
+  .search-icon {
+    margin-left: -30px;
+    color: brown; /* Change the icon color to brown */
+  }
+
+
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .order-table th,
+  .order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .order-table th {
+    background-color: #6f4e37;
+    color: white;
+  }
+  
+  .order-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .order-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .order-history-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .order-history-button:hover {
+    background-color: #5a3c2d;
+  }
+  
+
+
+
+
+/* Responsiveness: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .product-list {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 100%;
+        max-width: 300px; /* Ensure it doesn't stretch too much on smaller screens */
+    }
+
+    .user-table th, .user-table td {
+        padding: 10px;
+        font-size: 12px;
+      }
+}
